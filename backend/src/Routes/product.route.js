@@ -9,6 +9,9 @@ import {
 
 const route = Router();
 
+route.get("/", (req, res) => {
+  res.json("LISTO PERRO");
+});
 route.get("/product", getProducts);
 route.get("/product/:idProduct", getProductById);
 route.post("/product", createProduct);
